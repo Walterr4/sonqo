@@ -1,0 +1,22 @@
+<header class="topbar">
+    <nav class="navbar navbar-expand-lg navbar-light menu-system">
+      
+      <!--<a class="navbar-brand" href="/menu">{{titleHeader}}</a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item {{menu.active}} menu-item" *ngFor="let menu of menuList" >
+            <a class="nav-link" [routerLink]="[menu.urlLink]" [queryParams] = "{p:menu.nameOption}"   >
+              <i class="{{menu.iconOption}}" aria-hidden="true"></i>
+              {{menu.nameOption}}
+            </a>
+          </li>
+        </ul>
+      
+      </div>
+    </nav>
+
+    
+  </header>
