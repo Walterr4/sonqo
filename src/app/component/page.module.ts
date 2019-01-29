@@ -12,6 +12,7 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { MetodosComponent } from './pages/metodos/metodos.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
+import { PageComponent } from './pages/page/page.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
         MetodosComponent,
         ClientesComponent,
         ContactosComponent,
+        PageComponent,
                
     ],
     exports: [

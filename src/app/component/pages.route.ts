@@ -7,13 +7,14 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { MetodosComponent } from './pages/metodos/metodos.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
+import { PageComponent } from './pages/page/page.component';
 
 
 const pagesRoutes: Routes = [
-    {   path: 'menu',
-        component: MenuComponent,
+    {   path: '',
+        component: PageComponent,
         children: [
-            { path  : 'home',  component: HomeComponent},
+            { path  : 'home', component: HomeComponent },
             { path  : 'somos',  component: SomosComponent },
             { path  : 'servicios',component:ServiciosComponent},
             { path  : 'meodos', component:MetodosComponent},
@@ -21,5 +22,6 @@ const pagesRoutes: Routes = [
             { path  : 'contactos', component:ContactosComponent}
         ]
     }
+    
 ];
 export const PAGES_ROUTE = RouterModule.forChild( pagesRoutes );
