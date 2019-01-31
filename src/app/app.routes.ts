@@ -6,7 +6,7 @@ import { SomosComponent } from './component/pages/somos/somos.component';
 import { HomeComponent } from './component/pages/home/home.component';
 
 const routerPaths:Route[] = [
-    { path  : '', component: HomeComponent },
+    { path  : '', component: PageComponent },
     { path  : '**', component: PageNotFoundComponent }
     
 ];
