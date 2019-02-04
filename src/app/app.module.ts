@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { PagesModule } from './component/page.module';
 import { FormsModule } from '@angular/forms';
-import { MenuComponent } from './component/pages/menu/menu.component';
 import { HttpClientModule}    from '@angular/common/http';
 
 @NgModule({
